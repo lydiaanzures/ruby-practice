@@ -60,6 +60,21 @@ reverseIt("hello world")
 #   alert("a is now " + a + ", and b is now " + b);
 # };
 
+# Ruby version
+def swapEm(a, b);
+    new_a = b.to_s
+    new_b = a.to_s
+
+    a = new_a
+    b = new_b
+    p "a is now " + a + ", and b is now " + b
+end 
+
+swapEm("1","2")
+swapEm(1,2)
+
+
+
 
 
 
