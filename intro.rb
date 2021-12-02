@@ -234,51 +234,40 @@ end
 # Create a forloop that prints all numbers (inclusive) from 20 through 40.
 ###################
 
+# Create an if/elsif/elseconditional that prints "too long" if a string is longer than 10 characters, "just right" if it is between 5 and 10 characters (inclusive), and "too short" if it is less than 5 characters.
 
+string = "Objective C"
 
-
-# 1
-
-string_to_check = 'test56asfjhalskjfhalksfdhj'
-
-if string_to_check.length > 10;
-    p "too long"
-elsif string_to_check.length > 5 && string_to_check.length < 10
-        p "just right"
-    else 
-        p "too short"
+if string.length > 10
+    puts "too long"
+elsif string.length > 5
+    puts "just right"
+else
+    puts "too short"
 end
 
-while loop_number < 10;
-    loop_number += 1
-    p "loop number is " + loop_number.string
-end
+# Create a loop that prints "1st time through", "2nd time through", ..., untilthe 10th time.
 
-def check_length(str)
-    if str.length > 10
-        p ‘too long’
-    elsif str.length <= 10 && str.length >= 5
-        p ‘just right’
-    else
-        p ‘too short’
+10.times do |x|
+    if (x == 1)
+        puts "#{x}st time through"
+    end
+
+    if (x == 2)
+        puts "#{x}nd time through"
+    end
+
+    if (x == 3)
+        puts "#{x}rd time through"
+    end
+
+    if (x == 4 || x == 5 || x == 6 || x == 7 || x == 8 || x == 9)
+        puts "#{x}th time through"
     end
 end
-# 2
-i = 1
-while i <= 10
-    t = ” time through”
-    if i == 1
-        p “1st#{t}”
-    elsif i == 2
-        p “2nd#{t}”
-    elsif i == 3
-        p “3rd#{t}”
-    else
-        p “#{i}th#{t}”
-    end
-    i += 1
-end
-# 3
-for num in 20...41
-    p num
+
+# Create a forloop that prints all numbers (inclusive) from 20 through 40.
+
+for x in 20..40
+    puts x
 end
