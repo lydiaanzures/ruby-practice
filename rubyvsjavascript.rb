@@ -123,6 +123,20 @@ multiplyArray([1,2,3,45,54,65])
 
 # Ruby
 
+def fizzbuzzer(x);
+    if x.modulo(3*5) == 0;
+        p "fizzbuzz"
+    elsif x.modulo(3) == 0;
+        p "fizz"
+    elsif x.modulo(5) == 0;
+        p "buzz"
+    else
+        p "archer"
+    end
+end 
+
+fizzbuzzer(1510)
+
 
 
 
