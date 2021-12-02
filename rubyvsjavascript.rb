@@ -217,6 +217,27 @@ searchArray([1,2,3],3)
 #   return true;
 # };
 
+#Ruby
+def isPalindrome(string)
+    isTrue = false
+    for index in 0..string.length/2;
+        p string[index]
+        p string[string.length-1-index]
+        if string[index] != string[string.length-index-1]
+            isTrue = false
+            p isTrue
+            return isTrue
+            break
+        else
+            isTrue = true
+        end
+    end
+    p isTrue
+    return isTrue
+end
+
+isPalindrome("hannah")
+
 
 
 
