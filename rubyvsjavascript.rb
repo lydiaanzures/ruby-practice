@@ -169,6 +169,19 @@ def nthFibonacciNumber()
 end 
 nthFibonacciNumber()
 
+# #Write a method that searches through an array for a value and returns true or false depending on whether or not the value is present in the array. Here is the javascript:
+
+# const searchArray = (array, value) => {
+#   for(let i = 0; i < array.length-1; i++) {
+#     if(array[i] == value) {
+#       return true;
+#       break;
+#     }
+#   }
+#   return -1;
+# };
+
+
 
 
 
