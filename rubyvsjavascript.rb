@@ -232,3 +232,19 @@ def isPalindrome(string)
 end
 
 isPalindrome("hannah")
+
+# Write a method that checks whether or not an array has any duplicates. Here is the javascript:
+# const hasDupes = (arr) => {
+#   let obj = {};
+#   for (i = 0; i < arr.length; i++) {
+#     if(obj[arr[i]]) {
+#       return true;
+#     }
+#     else {
+#       obj[arr[i]] = true;
+#     }
+#   }
+#   return false;
+# };
+
+
