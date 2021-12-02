@@ -103,3 +103,31 @@ end
 
 multiplyArray([1,2,3,45,54,65])
 
+
+# Write a method that takes a number argument and returns "fizz" if the number is divisible by three, "buzz" if the number is divisible by five, and "fizzbuzz" if it's divisible by both. Here's the javascript:
+
+# const fizzbuzzer = (x) => {
+#   if( x%(3*5) == 0 ) {
+#     return 'fizzbuzz'
+#   } else if( x%3 == 0 ) {
+#     return 'fizz'
+#   } else if ( x%5 == 0 ) {
+#     return 'buzz'
+#   } else {
+#     return 'archer'
+#   }
+# }
+
+def fizzbuzzer(x);
+    if x.modulo(3*5) == 0;
+        p "fizzbuzz"
+    elsif x.modulo(3) == 0;
+        p "fizz"
+    elsif x.modulo(5) == 0;
+        p "buzz"
+    else
+        p "archer"
+    end
+end 
+
+fizzbuzzer(1510)
