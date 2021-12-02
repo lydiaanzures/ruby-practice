@@ -132,7 +132,7 @@ end
 
 fizzbuzzer(1510)
 
-# Write a method that finds the fibonacci number at the nth position and returns it. Here is the javascript:
+# Write a method that finds the fibonacci number at the nth position and returns array until that fib num. Here is the javascript:
 
 # const nthFibonacciNumber = () => {
 #   let fibs = [1, 1];
@@ -146,3 +146,18 @@ fizzbuzzer(1510)
 
 #   alert(fibs[fibs.length - 1] + " is the fibonacci number at position " + num);
 # };
+
+def nthFibonacciNumber()
+    fibs = [0,1]
+    p "Which fibonacci number do you want"
+    number = gets.to_i
+    while fibs.length < number;
+        n = fibs.length
+        nextFib = fibs[n-2] + fibs[n - 1]
+        fibs.push(nextFib);
+    end
+
+    p number
+    p fibs
+end 
+nthFibonacciNumber()
