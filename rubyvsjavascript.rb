@@ -47,6 +47,20 @@ end
 reverseIt("hello world")
 
 
+# Write a method that swaps the values of two variables around. Here's the javascript:
+# const swapEm = () => {
+#   let a = 10;
+#   let b = 30;
+#   let temp;
+
+#   temp = b;
+#   b = a;
+#   a = temp;
+
+#   alert("a is now " + a + ", and b is now " + b);
+# };
+
+
 
 
 
