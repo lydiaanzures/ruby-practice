@@ -29,3 +29,19 @@ getName()
 #     };
 #     alert(reverse);
 # };
+
+
+#Ruby version
+def reverseIt(string);
+    characters = string.split('')
+    # p characters
+    index = 0;
+    reversed_string = ""
+    for character in characters;
+        reversed_string += characters[characters.length-(index+1)]
+        index+=1
+    end 
+    p reversed_string
+end 
+
+reverseIt("hello world")
