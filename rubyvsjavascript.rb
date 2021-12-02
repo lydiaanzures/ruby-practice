@@ -9,4 +9,23 @@
 #     return name;
 # };
 
+# Ruby
+def getName()
+    p "What is your name?"
+    name = gets
+    puts "Hello #{name}"
+end
 
+getName()
+
+#Write a method that reverses a string
+
+# #Javascript
+# const reverseIt = () => {
+#     let string = "a man, a plan, a canal, frenemies!";
+#     let reverse = "";
+#     for (let i = 0; i < string.length; i++){
+#         reverse += string[string.length - (i+1)];
+#     };
+#     alert(reverse);
+# };
