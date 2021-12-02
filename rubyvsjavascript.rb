@@ -153,6 +153,22 @@ fizzbuzzer(1510)
 #   alert(fibs[fibs.length - 1] + " is the fibonacci number at position " + num);
 # };
 
+# Ruby
+def nthFibonacciNumber()
+    fibs = [0,1]
+    p "Which fibonacci number do you want"
+    number = gets.to_i
+    while fibs.length < number;
+        n = fibs.length
+        nextFib = fibs[n-2] + fibs[n - 1]
+        fibs.push(nextFib);
+    end
+
+    p number
+    p fibs
+end 
+nthFibonacciNumber()
+
 
 
 
