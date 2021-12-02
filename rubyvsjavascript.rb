@@ -198,3 +198,37 @@ def searchArray(array, value)
 end
 
 searchArray([1,2,3],3)
+
+
+# // Write a method that checks whether or not a string is a palindrome. Here is the javascript:
+
+# const isPalindrome = (str) => {
+#   for(let i = 0; i < str.length/2; i++){
+#     if(str[i] != str[str.length-i-1]){
+#       return false;
+#       break;
+#     }
+#   }
+#   return true;
+# };
+
+#Ruby
+def isPalindrome(string)
+    isTrue = false
+    for index in 0..string.length/2;
+        p string[index]
+        p string[string.length-1-index]
+        if string[index] != string[string.length-index-1]
+            isTrue = false
+            p isTrue
+            return isTrue
+            break
+        else
+            isTrue = true
+        end
+    end
+    p isTrue
+    return isTrue
+end
+
+isPalindrome("hannah")
