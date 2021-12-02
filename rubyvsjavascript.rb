@@ -31,7 +31,7 @@
 #     alert(reverse);
 # };
 
-#Ruby
+#Ruby version
 def reverseIt(string);
     characters = string.split('')
     # p characters
