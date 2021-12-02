@@ -72,5 +72,20 @@ end
 swapEm("1","2")
 swapEm(1,2)
 
+# Write a method that multiplies all numbers in a given array and returns the final product. Here's the javascript:
+
+# const multiplyArray = (ary) => {
+#   if (ary.length == 0) { return 1; };
+
+#   let total = 1;
+#   // let total = ary[0];
+
+#   for (let i=0; i < ary.length; i++) {
+#     total = total * ary[i];
+#   };
+
+#   return total;
+# };
+
 
 

@@ -7,6 +7,8 @@ const multiplyArray = (ary) => {
     for (let i=0; i < ary.length; i++) {
       total = total * ary[i];
     };
-  
+    console.log(total)
     return total;
   };
+
+  multiplyArray([1,2,3,4])
