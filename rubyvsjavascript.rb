@@ -11,13 +11,13 @@
 
 # Ruby
 
-def getName()
-    p "What is your name?"
-    name = gets
-    puts "Hello #{name}"
-end
+# def getName()
+#     p "What is your name?"
+#     name = gets
+#     puts "Hello #{name}"
+# end
 
-getName()
+# getName()
 
 #Write a method that reverses a string
 
@@ -30,3 +30,18 @@ getName()
 #     };
 #     alert(reverse);
 # };
+
+#Ruby
+def reverseIt(string);
+    characters = string.split('')
+    # p characters
+    index = 0;
+    reversed_string = ""
+    for character in characters;
+        reversed_string += characters[characters.length-(index+1)]
+        index+=1
+    end 
+    p reversed_string
+end 
+
+reverseIt("hello world")
