@@ -87,5 +87,19 @@ swapEm(1,2)
 #   return total;
 # };
 
+def multiplyArray(array)
+    total = 1
+    if array.length==0;
+        p total
+    else
+        for number in array;
+            total = total*number
+            # p total
 
+        end
+    end 
+    p total
+end
+
+multiplyArray([1,2,3,45,54,65])
 
