@@ -181,6 +181,31 @@ nthFibonacciNumber()
 #   return -1;
 # };
 
+# Ruby
+def searchArray(array, value)
+    
+    for number in array;
+        p number
+        if number == value;
+            found = true
+            p found
+            return found
+            break
+        else 
+            found = false
+        end
+
+    end
+    if found == false;
+        p found
+        return found
+    end
+    
+end
+
+searchArray([1,2,3],3)
+
+
 
 
 
