@@ -147,17 +147,54 @@ fizzbuzzer(1510)
 #   alert(fibs[fibs.length - 1] + " is the fibonacci number at position " + num);
 # };
 
-def nthFibonacciNumber()
-    fibs = [0,1]
-    p "Which fibonacci number do you want"
-    number = gets.to_i
-    while fibs.length < number;
-        n = fibs.length
-        nextFib = fibs[n-2] + fibs[n - 1]
-        fibs.push(nextFib);
-    end
+# def nthFibonacciNumber()
+#     fibs = [0,1]
+#     p "Which fibonacci number do you want"
+#     number = gets.to_i
+#     while fibs.length < number;
+#         n = fibs.length
+#         nextFib = fibs[n-2] + fibs[n - 1]
+#         fibs.push(nextFib);
+#     end
 
-    p number
-    p fibs
-end 
-nthFibonacciNumber()
+#     p number
+#     p fibs
+# end 
+# nthFibonacciNumber()
+
+# #Write a method that searches through an array for a value and returns true or false depending on whether or not the value is present in the array. Here is the javascript:
+
+# const searchArray = (array, value) => {
+#   for(let i = 0; i < array.length-1; i++) {
+#     if(array[i] == value) {
+#       return true;
+#       break;
+#     }
+#   }
+#   return -1;
+# };
+
+
+# Ruby
+def searchArray(array, value)
+    
+    for number in array;
+        p number
+        if number == value;
+            found = true
+            p found
+            return found
+            break
+        else 
+            found = false
+        end
+
+    end
+    if found == false;
+        p found
+        return found
+    end
+    
+end
+
+searchArray([1,2,3],3)
