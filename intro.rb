@@ -1,3 +1,5 @@
+# First time using Ruby
+
 require 'bigdecimal'
 
 #########################################
