@@ -10,9 +10,10 @@
 # };
 
 # Ruby
-
-def hello_you (you)
-    puts "Hello! #{you}"
+def getName()
+    p "What is your name?"
+    name = gets
+    puts "Hello #{name}"
 end
 
-p hello_you(1)
+getName()
