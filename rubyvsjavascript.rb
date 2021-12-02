@@ -247,4 +247,15 @@ isPalindrome("hannah")
 #   return false;
 # };
 
+# Ruby
+def hasDupes(array)
+    result = array.detect{ |e| array.count(e) > 1 }
+    if result != nil;
+        p "dupe detected"
+    else 
+        p "no dupes"
+    end
+end
+
+hasDupes([1,4,1,2])
 
