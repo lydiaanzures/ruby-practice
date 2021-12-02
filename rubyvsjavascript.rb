@@ -11,13 +11,13 @@
 
 # Ruby
 
-# def getName()
-#     p "What is your name?"
-#     name = gets
-#     puts "Hello #{name}"
-# end
+def getName()
+    p "What is your name?"
+    name = gets
+    puts "Hello #{name}"
+end
 
-# getName()
+getName()
 
 #Write a method that reverses a string
 
@@ -87,6 +87,8 @@ swapEm(1,2)
 #   return total;
 # };
 
+# Ruby
+
 def multiplyArray(array)
     total = 1
     if array.length==0;
@@ -118,6 +120,8 @@ multiplyArray([1,2,3,45,54,65])
 #   }
 # }
 
+# Ruby
+
 def fizzbuzzer(x);
     if x.modulo(3*5) == 0;
         p "fizzbuzz"
@@ -147,20 +151,21 @@ fizzbuzzer(1510)
 #   alert(fibs[fibs.length - 1] + " is the fibonacci number at position " + num);
 # };
 
-# def nthFibonacciNumber()
-#     fibs = [0,1]
-#     p "Which fibonacci number do you want"
-#     number = gets.to_i
-#     while fibs.length < number;
-#         n = fibs.length
-#         nextFib = fibs[n-2] + fibs[n - 1]
-#         fibs.push(nextFib);
-#     end
+# Ruby
+def nthFibonacciNumber()
+    fibs = [0,1]
+    p "Which fibonacci number do you want"
+    number = gets.to_i
+    while fibs.length < number;
+        n = fibs.length
+        nextFib = fibs[n-2] + fibs[n - 1]
+        fibs.push(nextFib);
+    end
 
-#     p number
-#     p fibs
-# end 
-# nthFibonacciNumber()
+    p number
+    p fibs
+end 
+nthFibonacciNumber()
 
 # #Write a method that searches through an array for a value and returns true or false depending on whether or not the value is present in the array. Here is the javascript:
 
