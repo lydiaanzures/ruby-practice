@@ -148,6 +148,9 @@ class Cow < Animal
         super(4, 0, "Moo")
         @name = name
     end
+    def milk()
+        return {item: "Milk"}
+    end
 
 end
 
@@ -155,6 +158,8 @@ bessie = Cow.new("Bessie")
 
 bessie.make_sound
 p bessie.name
+milk = bessie.milk
+puts milk
 
 # snake class
 class Snake < Animal
@@ -173,3 +178,74 @@ noodle = Snake.new("Danger Noodle the Snake")
 
 noodle.make_sound
 p noodle.name
+
+
+
+
+class Calculator
+
+    def Calculator.example
+        puts "This is a class method"
+    end
+
+    def instance_method
+        puts "this is an instance method"
+    end
+
+end 
+
+Calculator.example
+
+calc_instance = Calculator.new
+calc_instance.instance_method
+
+@@result = nil
+
+def Calculator.calculate(num1, num2, operator)
+    if operator == "+"
+        @@result = num1 + num2
+    elsif operator == "-"
+        @@result = num1 - num2
+    elsif operator == "*"
+        @@result = num1 * num2
+    elsif operator == "/"
+        @@result = num1 / num2
+    else
+        puts "don't recognize operator"
+    end
+end
+
+def Calculator.get_result
+    return @@result
+end
+
+Calculator.calculate(2,2,"+")
+p Calculator.get_result
+
+Calculator.calculate(2,2,"-")
+p Calculator.get_result
+
+Calculator.calculate(2,2,"*")
+p Calculator.get_result
+
+Calculator.calculate(2,2,"/")
+p Calculator.get_result
+
+
+### Named/Keyword
+def print_word(word:, word2:)
+    puts word
+    p word2
+end
+
+
+print_word(word2:"cheese", word: "Hello")
+
+### Default Arguments
+def add_nums num=0, num2=0
+    return num + num2
+end
+
+p add_nums(1,2) #1+2=3
+p add_nums #0+0=0
+
