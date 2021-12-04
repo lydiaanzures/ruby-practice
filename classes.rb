@@ -114,4 +114,62 @@ pinkie = Pig.new("Pinkie")
 
 puts pinkie.runs_around
 
+class Animal
+
+    attr_accessor :legs, :arms
+
+    def initialize(legs, arms, sound)
+        @legs = legs
+        @arms = arms
+        @sound = sound
+    end
+
+    def make_sound
+        puts @sound
+    end
+
+end
+
+# Cow = Animal.new(4, 0, "Moo")
+# Cow.make_sound
+
+# Rooster = Animal.new(4, 0, "Crow")
+# Rooster.make_sound
+
+
    
+## Child Class Cow that Inherits from Animal
+class Cow < Animal
+
+    attr_accessor :name
+
+    def initialize(name)
+        ## call the parent/super classes initialize
+        super(4, 0, "Moo")
+        @name = name
+    end
+
+end
+
+bessie = Cow.new("Bessie")
+
+bessie.make_sound
+p bessie.name
+
+# snake class
+class Snake < Animal
+
+    attr_accessor :name
+
+    def initialize(name)
+        ## call the parent/super classes initialize
+        super(4, 0, "tSSSSSS")
+        @name = name
+    end
+
+end
+
+noodle = Snake.new("Danger Noodle the Snake")
+
+noodle.make_sound
+p noodle.name
