@@ -238,3 +238,45 @@ end
 
 euler_problem(1000)
 
+# #####Primes
+# Write a method called check_prime?that will test whether a number is Prime. The method will return true if Prime, false if not.
+
+# check that I can use the prime method
+require 'prime'
+p 7.prime?
+
+# write method
+def check_prime number
+    p number.prime?
+    return number.prime?
+end
+
+check_prime 17
+
+# Write another method called get_primesthat will print all the Primes up to an arbitrary limit. For example, if you invoke your method with get_primes 100, it will print all the Prime numbers up to and including 100.
+def get_primes max
+    i = 0
+    while i < max
+        if i.prime? == true;
+            p i
+        end
+        i += 1
+    end
+end
+
+# get_primes 100
+
+# This method can call on the previous check_prime? method.
+def get_primes_with_callback max
+    i = 0
+    while i < max
+        check_prime i
+        i += 1
+    end
+end
+
+get_primes_with_callback 100
+
+
+
+
