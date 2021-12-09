@@ -146,7 +146,95 @@ end
 capitalize_array(colors)
 
 
-#         p color.upcase
-# end
+########################
+#Methods
+########################
+# Write a method named find_areathat 
+# finds the area of a rectangle when given values for width and height
+def find_area height, width
+    p width*height
+end
 
+find_area 2, 4
+
+
+# Write a method named multiply_each_by_fivethat will loop over the 
+# given numsarray below and print each number multiplied by 5
+nums = [5, 5, 6, 7, 2, 4, 3, 2, 1, 9, 7, 6, 0, 0]
+
+def multiply_each_by_five arr
+    multiplied_by_five_array = []
+    arr.each {|num|
+        p num*5
+        multiplied_by_five_array.push(num*5)
+    }
+    p multiplied_by_five_array
+    
+end
+
+multiply_each_by_five(nums) #printing both a new array of everything multiplied by 5 and each new number too
+
+########
+#Methods with a Hash
+########
+# Use the following given hashes to solve the problems below
+# Hashes
+
+book = {
+  title: 'The Great Gatsby',
+  author: 'F Scott Fitzgerald',
+  year: 1925,
+  price: 10
+}
+
+lamp = {
+  type: 'reading',
+  brand: 'Ikea',
+  price: 25
+}
+
+table = {
+  type: 'bed side',
+  brand: 'Crate & Barrel',
+  color: 'birch',
+  price: 50
+}
+
+# Write a method named print_pricethat will take in any hash and return the price of the item.
+def print_price hash
+    p hash[:price]
+end 
+
+print_price book
+print_price lamp
+print_price table
+
+# Write a method named print_item_sumsthat will take in two hashes and will return the sum of the prices for the items in the hashes.
+def print_item_sums(hash1, hash2)
+    p hash1[:price] + hash2[:price]
+end 
+
+print_item_sums book, table
+
+# Solving Problems with Ruby
+# Euler Problem 1
+# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+# Find the sum of all the multiples of 3 or 5 below 1000.
+def euler_problem(max)
+    # first find all multiples of 3 or 5 below 1000
+    n = 1
+    running_total_sum = 0
+    while n < max
+        if n%15==0;
+            running_total_sum += n
+            
+        end
+        n += 1
+            
+    end
+    p running_total_sum
+end 
+
+euler_problem(1000)
 
