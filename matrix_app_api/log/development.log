@@ -166,3 +166,31 @@ Migrating to ChangeTableName (20220103050149)
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
   [1m[36mCharacter Create (0.1ms)[0m  [1m[32mINSERT INTO "characters" ("name", "description") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Agent Smith"], ["description", "the antagonist"]]
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCharacter Load (1.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "characters"[0m
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "img_url" = $1 WHERE "characters"."id" = $2[0m  [["img_url", "https://upload.wikimedia.org/wikipedia/en/c/c6/NeoTheMatrix.jpg"], ["id", 1]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCharacter Load (1.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharacter Update (0.4ms)[0m  [1m[33mUPDATE "characters" SET "img_url" = $1 WHERE "characters"."id" = $2[0m  [["img_url", "https://upload.wikimedia.org/wikipedia/en/7/7a/MatrixTrinity.jpg"], ["id", 2]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCharacter Load (1.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharacter Update (0.7ms)[0m  [1m[33mUPDATE "characters" SET "img_url" = $1 WHERE "characters"."id" = $2[0m  [["img_url", "https://upload.wikimedia.org\n/wikipedia/en/7/7a/MatrixTrinity.jpg"], ["id", 3]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCharacter Load (0.9ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharacter Update (0.6ms)[0m  [1m[33mUPDATE "characters" SET "img_url" = $1 WHERE "characters"."id" = $2[0m  [["img_url", "https://upload.wikimedia.org/wikipedia/en/1/1f/Agent_Smith_%28The_Matrix_series_character%29.jpg"], ["id", 4]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCharacter Load (1.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharacter Destroy (0.5ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCharacter Create (0.9ms)[0m  [1m[32mINSERT INTO "characters" ("name", "description", "img_url") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "The Oracle"], ["description", "A new character added via ActiveRecord queries"], ["img_url", "https://upload.wikimedia.org/wikipedia/en/f/f0/The_Oracle_%28i%29.gif"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCharacter Load (1.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
