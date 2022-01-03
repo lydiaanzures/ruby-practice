@@ -33,21 +33,29 @@ openOrSenior([[59, 12],[55,-1],[12, -2],[12, 12]])
 ///////////////////////////////////////////
 //ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
 ///////////////////////////////
-
-
 function validatePIN (pin) {
     const pinLength = pin.length
-    result = false;
+    let result = false;
     if (pinLength == 4 | pinLength == 6){
-        const result = true;
-        // console.log(result)
-    }else{
-        const result = false;
-        // console.log(result)
+        for (i=0;i<pinLength; i++){
+            console.log(pin[i])
+            console.log(Number.isInteger(parseInt(pin[i])))
+            if (Number.isInteger(parseInt(pin[i]))){
+                result = true;;
+                console.log("here")
+            } else{
+                result = false;
+                break
+            }
+        }
     }
+    else{
+        result = false;
+    }
+    
     console.log(result)
     return result
     
 }
 
-validatePIN([1,2,3])
+validatePIN("91234")
