@@ -157,7 +157,24 @@ lydia=# SELECT * FROM country JOIN city on country.code = city.countrycode WHERE
 
 
 -- Clue #6: We're close! Our South American agent says she just got a taxi at the airport, and is headed towards the capital! Look up the country's capital, and get there pronto! Send us the name of where you're headed and we'll follow right behind you!
+lydia=# SELECT capital FROM country WHERE country.name = 'Brazil';
+--  capital
+-- ---------
+--      211
+-- (1 row)
 
+lydia=# SELECT id FROM city JOIN country on city.id = country.capital WHERE country.capital = 211;
+--  id
+-- -----
+--  211
+-- (1 row)
+
+lydia=# SELECT name FROM city WHERE id = 211;
+--     name
+-- ------------
+--  Bras�lia
+-- (1 row)
+Brasilia!
 
 
 
@@ -174,8 +191,11 @@ lydia=# SELECT * FROM country JOIN city on country.code = city.countrycode WHERE
 
 
 -- We're counting on you, gumshoe. Find out where she's headed, send us the info, and we'll be sure to meet her at the gates with bells on.
+-- Okay so subtract one from her population clue and look for that population 91,084
+lydia=# SELECT name FROM city WHERE city.population = 91084;
+--      name
+-- --------------
+--  Santa Monica
+-- (1 row)
 
-
-
-
--- She's in ____________________________!
+-- She's in ___Santa Monica, California_________________________!
