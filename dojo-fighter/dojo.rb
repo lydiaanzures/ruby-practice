@@ -95,6 +95,12 @@ class Dojo
         fighter.defense += 1
         puts "Your endurance is growing"
     end
+    # coin_in_fountain(fighter)
+    # => takes in fighter and adds 1 to strength
+    def self.coin_in_fountaingit (fighter)
+        fighter.strength += 1
+        puts "You are feeling your strength surge"
+    end
 end
 
 ken = Fighter.new("Ken", 5,5,5,5)
