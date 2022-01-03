@@ -8,8 +8,8 @@
 # Model.create({ column: data, column: data })
 
 Character.create([
-	{ name: "Neo", description: false },
-	{ name: "Trinity", description: false },
-	{ name: "Morpheus", description: false },
-	{ name: "Agent Smith", description: false },
+	{ name: "Neo", description: "our protagonist" },
+	{ name: "Trinity", description: "the captain" },
+	{ name: "Morpheus", description: "the love interest" },
+	{ name: "Agent Smith", description: "the antagonist" },
 ])
