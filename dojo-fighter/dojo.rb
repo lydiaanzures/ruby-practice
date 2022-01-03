@@ -65,9 +65,52 @@ class Fighter
     end
 end
 
+# ken = Fighter.new("Ken", 5,5,5,5)
+# ryu = Fighter.new("Ryu", 7,7,7,7)
+
+# puts ken.life
+# ryu.attack(ken)
+# puts ken.life
+
+
+# lift_weights(fighter)
+# => takes in fighter and adds 1 to strength
+
+# endurance_training(fighter)
+# => takes in fighter and adds 1 to defense
+
+# coin_in_fountain(fighter)
+# => takes in fighter and adds 1 to strength
+
+class Dojo
+    # lift_weights(fighter)
+# => takes in fighter and adds 1 to strength
+    def self.lift_weights(fighter)
+        fighter.strength += 1
+        puts "You are feeling your strength surge"
+    end
+    # endurance_training(fighter)
+    # => takes in fighter and adds 1 to defense
+    def self.endurance_training(fighter)
+        fighter.defense += 1
+        puts "Your endurance is growing"
+    end
+end
+
 ken = Fighter.new("Ken", 5,5,5,5)
 ryu = Fighter.new("Ryu", 7,7,7,7)
 
-puts ken.life
-ryu.attack(ken)
-puts ken.life
+puts ryu.strength
+Dojo.lift_weights(ryu)
+
+Dojo.endurance_training(ryu)
+puts ryu.defense
+
+
+# welcome player to game and ask for their name
+# =>  use `gets` to get players name in variable
+
+# create new fighter ```player = Fighter.new(name, 0,0,0, 10)```
+# =>  all their stats start at 0 except life which is 10 *
+
+# create their opponent ```Akuma = Fighter.new("Akuma", 4,4,4,10)```
