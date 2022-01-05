@@ -67,8 +67,8 @@ validatePIN("91234")
 // filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
 function filter_list(l) {
     for (i in l){
-        if (l[i].isInteger() == True){
-            
+        if (Number.isInteger(l[i]) == true){
+            console.log(l[i])
         }
     }
   }
