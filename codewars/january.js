@@ -83,3 +83,24 @@ function filter_list(l) {
 filter_list([1,2,'a','b'])
 filter_list([1,'a','b',0,15])
 filter_list([1,2,'aasf','1','123',123])
+
+// Create a function that returns the sum of the two lowest positive 
+//numbers given an array of minimum 4 positive integers. 
+//No floats or non-positive integers will be passed.
+
+// For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+// [10, 343445353, 3453445, 3453545353453] should return 3453455.
+// function sumTwoSmallestNumbers(numbers) {  
+//     numbers.sort(function(num1, num2)){
+//         console.log(num1-num2)
+//         return num1-num2
+//     }
+
+    
+//   }
+//   console.log(numbers)
+
+
+
+
+
