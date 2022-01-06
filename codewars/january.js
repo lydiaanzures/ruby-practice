@@ -90,16 +90,19 @@ filter_list([1,2,'aasf','1','123',123])
 
 // For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
 // [10, 343445353, 3453445, 3453545353453] should return 3453455.
-// function sumTwoSmallestNumbers(numbers) {  
-//     numbers.sort(function(num1, num2)){
-//         console.log(num1-num2)
-//         return num1-num2
-//     }
+function sumTwoSmallestNumbers(numbers) {  
+    numbers.sort(function(num1, num2){
+        return num1-num2
+    })
+    sum = numbers[0] + numbers[1]
+    console.log(sum)
+} 
 
-    
-//   }
-//   console.log(numbers)
-
+sumTwoSmallestNumbers([5, 8, 12, 19, 22])
+sumTwoSmallestNumbers([15, 28, 4, 2, 43])
+sumTwoSmallestNumbers([3, 87, 45, 12, 7])
+sumTwoSmallestNumbers([23, 71, 33, 82, 1])
+sumTwoSmallestNumbers([52, 76, 14, 12, 4])
 
 
 
