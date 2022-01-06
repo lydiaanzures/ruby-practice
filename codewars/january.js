@@ -96,6 +96,7 @@ function sumTwoSmallestNumbers(numbers) {
     })
     sum = numbers[0] + numbers[1]
     console.log(sum)
+    return sum
 } 
 
 sumTwoSmallestNumbers([5, 8, 12, 19, 22])
