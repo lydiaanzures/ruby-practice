@@ -144,3 +144,34 @@ function findOdd(A) {
     return 0;
   }
 
+function SeriesSum(n){
+    for (i=0; i<n; i++){
+        if (i==0){
+            sum = Number.parseFloat(1).toPrecision(2);
+            denominator = 1
+        }else{
+        denominator = denominator + 3
+        sum = sum + 1/(denominator)
+        }
+    }
+    console.log(sum)
+    sum = sum.toFixed(2)
+    return sum
+}
+
+SeriesSum(1)
+
+
+
+// console.log("New")
+// for (i=0; i<6; i++){
+//     if (i==0){
+//         sum = 1
+//         denominator = 1
+//     }else{
+//     denominator = denominator + 3
+//     sum = sum + 1/(denominator)
+//     }
+// }
+// console.log(sum)
+
