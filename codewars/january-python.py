@@ -20,5 +20,11 @@ def basic_op(operator, value1, value2):
         result = value1 / value2
     return result
 
+import math
+def litres(time):
+    # print int(math.floor(time * 0.5))
+    return int(math.floor(time * 0.5))
+
+
 
 
