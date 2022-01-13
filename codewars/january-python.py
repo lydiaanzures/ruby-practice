@@ -69,3 +69,11 @@ def count_sheeps(sheep):
         if sheepling == True:
             count += 1
     return count
+
+# def find_short(s):
+#     # your code here
+#     return l # l: shortest word length
+
+string = 'bitcoin take over the world maybe who knows perhaps'
+# new_string = string.split(" ")
+print(len(min(string.split(" "), key = len)))
