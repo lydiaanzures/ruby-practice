@@ -36,8 +36,13 @@ def convert_to_list(num):
 convert_to_list(1234)
 
 
-# def sort_desc(arr)
+def sort_desc(arr):
+    arr.sort(reverse=True)
+    print(arr)
+    return arr.sort(reverse=True)
 
-arr = ['6', '2', '3', '4']
-arr.sort(reverse=True)
-print arr
+# arr = ['6', '2', '3', '4']
+# arr.sort(reverse=True)
+# print arr
+
+sort_desc(['6', '2', '3', '4'])
