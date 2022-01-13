@@ -25,14 +25,14 @@ def litres(time):
     # print int(math.floor(time * 0.5))
     return int(math.floor(time * 0.5))
 
-def descending_order(num):
-    # Bust a move right here
+# def descending_order(num):
+#     # Bust a move right here
 
-num = 1234
-list1 = []
-list1[:] = '123'
-print(list1[:0])
-print(list1)
-# print(list1[:0])
+def convert_to_list(num):
+    new_list = []
+    new_list[:] = str(num)
+    print(new_list)
+    return new_list
+convert_to_list(1234)
 
-# print result
+
