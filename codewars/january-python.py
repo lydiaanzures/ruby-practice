@@ -48,9 +48,7 @@ def string_to_descending_order(num):
 
 string_to_descending_order(5281923)
 
-# def count_sheeps(sheep):
-#   # TODO May the force be with you
-#   pass
+
 
 array = [True,  True,  True,  False,
   True,  True,  True,  True ,
@@ -64,3 +62,10 @@ for sheep in array:
     if sheep == True:
         count += 1
 print(count)
+
+def count_sheeps(sheep):
+    count = 0
+    for sheepling in sheep:
+        if sheepling == True:
+            count += 1
+    return count
