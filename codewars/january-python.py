@@ -84,8 +84,18 @@ def square_digits(num):
     new_list[:] = str(num)
     for i in new_list:
         new_num += str(int(i)**2)
-    # print(new_num)
+    print(new_num)
     return int(new_num)
 
 square_digits(3223)
+
+
+# num = 9119
+# new_list = []
+# new_num = ''
+# new_list[:] = str(num)
+# for i in new_list:
+#     new_num += str(int(i)**2)
+#     # print(new_num)
+
 
