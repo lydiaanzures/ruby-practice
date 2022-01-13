@@ -39,3 +39,7 @@ def sort_desc(arr):
     return arr.sort(reverse=True)
 
 # sort_desc(['6', '2', '3', '4'])
+
+def string_to_descending_order(num):
+    # Bust a move right here
+    return 0
