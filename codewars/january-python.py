@@ -25,9 +25,6 @@ def litres(time):
     # print int(math.floor(time * 0.5))
     return int(math.floor(time * 0.5))
 
-# def descending_order(num):
-#     # Bust a move right here
-
 def convert_to_list(num):
     new_list = []
     new_list[:] = str(num)
@@ -41,8 +38,4 @@ def sort_desc(arr):
     print(arr)
     return arr.sort(reverse=True)
 
-# arr = ['6', '2', '3', '4']
-# arr.sort(reverse=True)
-# print arr
-
-sort_desc(['6', '2', '3', '4'])
+# sort_desc(['6', '2', '3', '4'])
