@@ -76,3 +76,7 @@ string = 'bitcoin take over the world maybe who knows perhaps'
 
 def find_short(s):
     return len(min(s.split(" "), key = len))
+
+# square every digit of a number and concatenate them.
+def square_digits(num):
+    pass
