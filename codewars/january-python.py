@@ -41,6 +41,10 @@ def sort_desc(arr):
 # sort_desc(['6', '2', '3', '4'])
 
 def string_to_descending_order(num):
-    new_list = []
-    new_list[:] = str(num)
-    return 0
+    arr = []
+    arr[:] = str(num)
+    arr.sort(reverse=True)
+    print arr
+    return arr.sort(reverse=True)
+
+string_to_descending_order(5281923)
