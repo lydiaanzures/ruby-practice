@@ -78,5 +78,15 @@ def find_short(s):
     return len(min(s.split(" "), key = len))
 
 # square every digit of a number and concatenate them.
-def square_digits(num):
-    pass
+# def square_digits(num):
+
+#     pass
+num = 9119
+new_list = []
+new_num = ''
+new_list[:] = str(num)
+for i in new_list:
+    new_num += str(int(i)**2)
+    # print(new_num)
+
+
