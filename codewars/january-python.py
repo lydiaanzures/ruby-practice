@@ -47,3 +47,20 @@ def string_to_descending_order(num):
     return arr
 
 string_to_descending_order(5281923)
+
+# def count_sheeps(sheep):
+#   # TODO May the force be with you
+#   pass
+
+array = [True,  True,  True,  False,
+  True,  True,  True,  True ,
+  True,  False, True,  False,
+  True,  False, False, True ,
+  True,  True,  True,  True ,
+  False, False, True,  True]
+
+count = 0
+for sheep in array:
+    if sheep == True:
+        count += 1
+print(count)
