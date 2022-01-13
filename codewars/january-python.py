@@ -44,7 +44,6 @@ def string_to_descending_order(num):
     arr = []
     arr[:] = str(num)
     arr.sort(reverse=True)
-    print arr
-    return arr.sort(reverse=True)
+    return arr
 
 string_to_descending_order(5281923)
