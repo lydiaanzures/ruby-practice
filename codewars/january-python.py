@@ -31,7 +31,7 @@ def litres(time):
 def convert_to_list(num):
     new_list = []
     new_list[:] = str(num)
-    print(new_list)
+    # print(new_list)
     return new_list
 convert_to_list(1234)
 
