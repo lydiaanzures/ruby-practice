@@ -98,34 +98,27 @@ def number_to_string(num):
 def numbers_to_strings(argument):
     switch =  {
         0: "zero",
-        1: "one"
-        # case 1:
-        #     return "one";
-        # case 2:
-        #     return "two";
-        # default:
-        #     return "nothing";
-    }
+        1: "one"}
     return switch.get(argument, "nothing")
 
 numbers_to_strings(2)
 
 
 
-# def get_planet_name(id):
-#     # This doesn't work; Fix it!
-#     name=""
-#     switch (id) {
-#         case 1: 
-#             return name = "Mercury";
-#         case 2: name = "Venus";
-#         case 3: name = "Earth";
-#         case 4: name = "Mars";
-#         case 5: name = "Jupiter";
-#         case 6: name = "Saturn";
-#         case 7: name = "Uranus";  
-#         case 8: name = "Neptune";
-#     }
-#     return name
+def get_planet_name(id):
+    # This doesn't work; Fix it!
+    name=""
+    switch = {
+        1: "Mercury",
+        2: "Venus",
+        3: "Earth",
+        4: "Mars",
+        5: "Jupiter",
+        6: "Saturn",
+        7: "Uranus",
+        8: "Neptune",
+    }
+    print switch.get(id)
+    return switch.get(id)
 
-# get_planet_name(3)
+get_planet_name(3)
