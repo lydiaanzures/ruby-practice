@@ -90,5 +90,7 @@ def square_digits(num):
 square_digits(3223)
 
 
-
+def number_to_string(num):
+    # Return a string of the number here!
+    return str(num)
 
