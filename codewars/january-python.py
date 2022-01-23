@@ -130,3 +130,9 @@ def bool_to_word(boolean):
     else:
         print("No")
         return("No")
+
+def sum_array(a):
+    sum = 0
+    for i in a:
+        sum += i 
+    return sum
